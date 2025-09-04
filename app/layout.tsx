@@ -6,6 +6,7 @@ import "./globals.css"
 import Header from "@/app/Header";
 import {Provider} from "react-redux";
 import {store} from "./lib/redux-toolkit/store"
+import Sidebar from "@/app/Sidebar";
 
 export default function layout({children}: { children: ReactNode }) {
     return (
@@ -13,6 +14,7 @@ export default function layout({children}: { children: ReactNode }) {
             <AppRouterCacheProvider options={{enableCssLayer: true}}>
                 <html lang="uk">
                 <body className="w-full flex flex-col">
+                <Sidebar/>
                 <Header/>
                 {children}
 
