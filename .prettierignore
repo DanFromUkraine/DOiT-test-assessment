@@ -1,0 +1,10 @@
+node_modules;
+public.gitignore;
+assessment - requirements.md;
+next - end.d.ts;
+pnpm - lock.yaml;
+postcss.config.mjs;
+README.md;
+tsconfig.json;
+package.json;
+.idea
