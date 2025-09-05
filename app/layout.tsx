@@ -15,11 +15,11 @@ export default function layout({ children }: { children: ReactNode }) {
                   <AppRouterCacheProvider options={{ enableCssLayer: true }}>
                         <HookInitializers />
                         <html lang="uk">
-                        <body className="w-full flex flex-col dark:bg-black">
-                        <Sidebar />
-                        <Header />
-                        {children}
-                        </body>
+                              <body className="w-full flex flex-col dark:bg-black">
+                                    <Sidebar />
+                                    <Header />
+                                    {children}
+                              </body>
                         </html>
                   </AppRouterCacheProvider>
             </Provider>

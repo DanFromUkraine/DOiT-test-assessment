@@ -15,13 +15,18 @@ export default function HeroSection() {
                         команди!
                   </Typography>
                   <Box className="w-full flex justify-center gap-4">
-                        <Button variant="contained" startIcon={<FormatListBulletedIcon />}>
+                        <Button
+                              variant="contained"
+                              startIcon={<FormatListBulletedIcon />}
+                        >
                               ПЕРЕГЛЯНУТИ ПОСТИ
                         </Button>
-                        <Button variant="outlined" startIcon={<AddCircleIcon />}>
+                        <Button
+                              variant="outlined"
+                              startIcon={<AddCircleIcon />}
+                        >
                               ДОДАТИ ПОСТ
                         </Button>
-
                   </Box>
             </Box>
       );
