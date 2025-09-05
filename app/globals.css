@@ -2,7 +2,7 @@
 @import "tailwindcss";
 
 @theme {
-    --color-containerDarkMode: #2a3237
+    --color-containerDarkMode: #1e1e1e;
 }
 
 @layer utilities {
@@ -11,9 +11,21 @@
     }
 
     .gradientDark {
-        @apply bg-gradient-to-r from-[#2a3237] via-[#1a1b2e] to-[#4b0082];
+        @apply bg-gradient-to-r from-[#1e1e1e] via-[#1a1b2e] to-[#4b0082];
+    }
+}
+
+@layer components {
+    .postCardsContainer {
+        column-count: 3;
+        column-gap: 16px;
     }
 
+    .postCard {
+        break-inside: avoid;
+        @apply flex flex-col py-4 gap-2 w-full shadow-md mb-4 border border-gray-300 rounded-xl items-start h-fit dark:text-white dark:border-transparent dark:bg-[#1e1e1e];
+
+    }
 }
 
 @custom-variant dark (&:where(.dark, .dark *));

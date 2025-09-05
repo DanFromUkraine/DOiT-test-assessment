@@ -3,12 +3,16 @@
 import { configureStore } from "@reduxjs/toolkit";
 import themeReducer from "@/src/features/theme";
 import sidebarReducer from "@/src/features/sidebar";
+import { postsAPI } from "@/src/services/postsApi";
 
 export const store = configureStore({
       reducer: {
             theme: themeReducer,
             sidebar: sidebarReducer,
+            [postsAPI.reducerPath]: postsAPI.reducer,
       },
+      middleware: (getDefaultMiddleware) =>
+            getDefaultMiddleware().concat(postsAPI.middleware),
 });
 
 export type RootState = ReturnType<typeof store.getState>;

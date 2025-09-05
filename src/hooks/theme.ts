@@ -22,9 +22,7 @@ export function useInitThemeFromLS() {
       }, []);
 }
 
-function addThemeClassToDocument() {
-
-}
+function addThemeClassToDocument() {}
 
 function toggleThemeLS() {
       const theme = getThemeLS();
@@ -34,7 +32,6 @@ function toggleThemeLS() {
       } else {
             localStorage.setItem("colorTheme", "light");
             document.documentElement.classList.remove("dark");
-
       }
 }
 

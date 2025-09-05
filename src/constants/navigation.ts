@@ -1,22 +1,22 @@
 import { NavigationList } from "@/src/constants/types";
-import HomeIcon from '@mui/icons-material/Home';
-import FormatListBulletedIcon from '@mui/icons-material/FormatListBulleted';
-import AddCircleIcon from '@mui/icons-material/AddCircle';
+import HomeIcon from "@mui/icons-material/Home";
+import FormatListBulletedIcon from "@mui/icons-material/FormatListBulleted";
+import AddCircleIcon from "@mui/icons-material/AddCircle";
 
 export const NAVIGATION_LIST: NavigationList = [
       {
             href: "/",
             name: "DOiT MVP",
-            Icon: HomeIcon
+            Icon: HomeIcon,
       },
       {
-            href: "/[id]",
+            href: "/posts",
             name: "Усі пости",
-            Icon: FormatListBulletedIcon
+            Icon: FormatListBulletedIcon,
       },
       {
-            href: "/[id]/create",
+            href: "/posts/create",
             name: "Створити пост",
-            Icon: AddCircleIcon
+            Icon: AddCircleIcon,
       },
 ];
