@@ -2,9 +2,9 @@ import * as React from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
-import ChangeThemeButton from "@/app/Header/ChangeThemeButton";
-import OpenSidebarButton from "@/app/Header/OpenSidebarButton";
-import Logo from "@/app/Header/Logo";
+import ChangeThemeButton from "@/src/components/AppHeader/ChangeThemeButton";
+import OpenSidebarButton from "@/src/components/AppHeader/OpenSidebarButton";
+import Logo from "@/src/components/AppHeader/Logo";
 
 export default function Header() {
     return (

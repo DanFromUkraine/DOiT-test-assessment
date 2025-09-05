@@ -5,24 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1c9410c4-6ed4-437c-b79b-b58d85d9220c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Header/Logo/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Header/OpenSidebarButton/UI.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Header/OpenSidebarButton/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Sidebar/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/lib/redux-toolkit/features/sidebar/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/lib/redux-toolkit/features/sidebar/types.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/lib/redux-toolkit/features/sidebar/utils.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/lib/redux-toolkit/features/theme/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/lib/redux-toolkit/features/theme/types.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Initializers/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/constants/navigation.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/constants/types.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/features/types.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/theme.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Header/ChangeThemeButton/UI.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/Header/ChangeThemeButton/UI.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Header/ChangeThemeButton/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/Header/ChangeThemeButton/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Header/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/Header/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Header/ChangeThemeButton/UI.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AppHeader/ChangeThemeButton/UI.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Header/ChangeThemeButton/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AppHeader/ChangeThemeButton/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Header/Logo/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AppHeader/Logo/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Header/OpenSidebarButton/UI.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AppHeader/OpenSidebarButton/UI.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Header/OpenSidebarButton/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AppHeader/OpenSidebarButton/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Header/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AppHeader/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Sidebar/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DrawerNav/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/lib/redux-toolkit/features/themeSlice.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/lib/redux-toolkit/features/types.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/lib/redux-toolkit/features/utils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/lib/redux-toolkit/features/theme/utils.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/lib/redux-toolkit/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/lib/redux-toolkit/store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/lib/redux-toolkit/features/sidebar/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/sidebar/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/lib/redux-toolkit/features/sidebar/types.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/lib/redux-toolkit/features/sidebar/utils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/sidebar/utils.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/lib/redux-toolkit/features/theme/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/theme/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/lib/redux-toolkit/features/theme/types.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/lib/redux-toolkit/features/theme/utils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/theme/utils.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/lib/redux-toolkit/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/lib/redux-toolkit/types.d.ts" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,9 +36,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="32F5UEsm9LNyCixyZJs2mcd0igC" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -49,7 +53,9 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "last_opened_file_path": "/home/linkava/docs/assessments/do-it",
+    "js.debugger.nextJs.config.created.client": "true",
+    "js.debugger.nextJs.config.created.server": "true",
+    "last_opened_file_path": "/home/linkava/docs/assessments/do-it/src/features",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -66,7 +72,7 @@
       <window_info id="Backup and Sync History" />
       <window_info id="Commit_Guest" show_stripe_button="false" />
       <window_info id="Pull Requests" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3299939" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27838492" />
       <window_info id="Commit" order="1" weight="0.25" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" />
@@ -77,7 +83,7 @@
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Problems" order="1" />
       <window_info anchor="bottom" id="Problems View" order="2" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="3" visible="true" weight="0.33044806" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="3" visible="true" weight="0.2398167" />
       <window_info anchor="bottom" id="Services" order="4" />
       <window_info anchor="right" id="Endpoints" />
       <window_info anchor="right" id="Coverage" side_tool="true" />
@@ -90,11 +96,30 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/features" />
+      <recent name="$PROJECT_DIR$/src/store" />
+      <recent name="$PROJECT_DIR$/src/constants" />
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components" />
       <recent name="$PROJECT_DIR$/app/lib/redux-toolkit/features/theme" />
     </key>
+  </component>
+  <component name="RunManager" selected="npm.Next.js: server-side">
+    <configuration name="Next.js: debug client-side" type="JavascriptDebugType" uri="http://localhost:3000/">
+      <method v="2" />
+    </configuration>
+    <configuration name="Next.js: server-side" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -110,7 +135,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1757003493939</updated>
-      <workItem from="1757003494981" duration="9897000" />
+      <workItem from="1757003494981" duration="10998000" />
+      <workItem from="1757063153822" duration="5553000" />
     </task>
     <servers />
   </component>

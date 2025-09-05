@@ -1,14 +1,12 @@
-import {sidebarSlice} from "@/app/lib/redux-toolkit/features/sidebar/index";
 import {useDispatch, useSelector} from "react-redux";
-import {SidebarState} from "@/app/lib/redux-toolkit/features/sidebar/types";
-import {RootState} from "@/app/lib/redux-toolkit/types";
+import {sidebarSlice} from "@/src/features/sidebar";
+import {RootState} from "@/src/store/store";
+import {SidebarState} from "@/src/features/types";
 
 
 const {open, close} = sidebarSlice.actions;
 
-export function useGetSidebarOpened() {
-    return useSelector<RootState, SidebarState>(state => state.sidebar);
-}
+export const useSelectSidebarInfo = () => useSelector<RootState, SidebarState>(state => state.sidebar);
 
 export function useGetOpenSidebarFn() {
     const dispatch = useDispatch();

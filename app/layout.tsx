@@ -3,15 +3,18 @@
 import {ReactNode} from 'react'
 import {AppRouterCacheProvider} from '@mui/material-nextjs/v15-appRouter';
 import "./globals.css"
-import Header from "@/app/Header";
+import Header from "@/src/components/AppHeader";
 import {Provider} from "react-redux";
-import {store} from "./lib/redux-toolkit/store"
-import Sidebar from "@/app/Sidebar";
+import Sidebar from "@/src/components/DrawerNav";
+import {store} from "@/src/store/store";
+import HookInitializers from "@/src/components/Initializers";
+
 
 export default function layout({children}: { children: ReactNode }) {
     return (
         <Provider store={store}>
             <AppRouterCacheProvider options={{enableCssLayer: true}}>
+                <HookInitializers/>
                 <html lang="uk">
                 <body className="w-full flex flex-col">
                 <Sidebar/>

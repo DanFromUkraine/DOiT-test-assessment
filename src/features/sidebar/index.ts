@@ -1,5 +1,5 @@
 import {createSlice} from "@reduxjs/toolkit";
-import {SidebarState} from "@/app/lib/redux-toolkit/features/sidebar/types";
+import {SidebarState} from "@/src/features/types";
 
 
 const initialState: SidebarState = {
