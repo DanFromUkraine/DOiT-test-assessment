@@ -1,2 +1,19 @@
 @layer theme, base, mui, components, utilities;
-@import 'tailwindcss';
+@import "tailwindcss";
+
+@theme {
+    --color-containerDarkMode: #2a3237
+}
+
+@layer utilities {
+    .gradientLight {
+        @apply bg-gradient-to-r from-blue-100 via-blue-50 to-pink-100;
+    }
+
+    .gradientDark {
+        @apply bg-gradient-to-r from-[#2a3237] via-[#1a1b2e] to-[#4b0082];
+    }
+
+}
+
+@custom-variant dark (&:where(.dark, .dark *));

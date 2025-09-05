@@ -1,6 +1,9 @@
-export type NavigationItem = {
-    href: string;
-    name: string;
-}
+import { SvgIconComponent } from "@mui/icons-material";
 
-export type NavigationList = NavigationItem[]
+export type NavigationItem = {
+      href: string;
+      name: string;
+      Icon: SvgIconComponent
+};
+
+export type NavigationList = NavigationItem[];

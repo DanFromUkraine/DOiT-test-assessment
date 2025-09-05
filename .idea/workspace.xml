@@ -5,28 +5,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1c9410c4-6ed4-437c-b79b-b58d85d9220c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Initializers/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/constants/navigation.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/constants/types.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/types.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hooks/theme.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/DrawerNav/NavItem/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/HeroSection/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Header/ChangeThemeButton/UI.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AppHeader/ChangeThemeButton/UI.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Header/ChangeThemeButton/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AppHeader/ChangeThemeButton/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Header/Logo/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AppHeader/Logo/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Header/OpenSidebarButton/UI.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AppHeader/OpenSidebarButton/UI.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Header/OpenSidebarButton/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AppHeader/OpenSidebarButton/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Header/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AppHeader/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Sidebar/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DrawerNav/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/HeroSection/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/posts/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/globals.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/lib/redux-toolkit/features/sidebar/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/sidebar/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/lib/redux-toolkit/features/sidebar/types.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/lib/redux-toolkit/features/sidebar/utils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/sidebar/utils.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/lib/redux-toolkit/features/theme/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/theme/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/lib/redux-toolkit/features/theme/types.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/lib/redux-toolkit/features/theme/utils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/theme/utils.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/lib/redux-toolkit/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/store.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/lib/redux-toolkit/types.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assessment-requirements.md" beforeDir="false" afterPath="$PROJECT_DIR$/assessment-requirements.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postcss.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/postcss.config.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prettier.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/prettier.config.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AppHeader/ChangeThemeButton/UI.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AppHeader/ChangeThemeButton/UI.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AppHeader/ChangeThemeButton/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AppHeader/ChangeThemeButton/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AppHeader/Logo/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AppHeader/Logo/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AppHeader/OpenSidebarButton/UI.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AppHeader/OpenSidebarButton/UI.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AppHeader/OpenSidebarButton/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AppHeader/OpenSidebarButton/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AppHeader/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AppHeader/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DrawerNav/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DrawerNav/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Initializers/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Initializers/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/navigation.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/navigation.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/types.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/types.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/sidebar/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/sidebar/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/sidebar/utils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/sidebar/utils.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/theme/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/theme/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/theme/utils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/theme/utils.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/types.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/types.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/theme.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/theme.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +70,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "/home/linkava/docs/assessments/do-it/node_modules/prettier",
     "ts.external.directory.path": "/home/linkava/docs/assessments/do-it/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
@@ -83,9 +93,10 @@
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Problems" order="1" />
       <window_info anchor="bottom" id="Problems View" order="2" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="3" visible="true" weight="0.2398167" />
+      <window_info anchor="bottom" id="Terminal" order="3" weight="0.2398167" />
       <window_info anchor="bottom" id="Services" order="4" />
       <window_info anchor="right" id="Endpoints" />
+      <window_info anchor="right" id="documentation.v2" show_stripe_button="false" side_tool="true" />
       <window_info anchor="right" id="Coverage" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Notifications" order="0" weight="0.25" />
       <window_info anchor="right" id="AIAssistant" order="1" weight="0.25" />
@@ -136,7 +147,7 @@
       <option name="presentableId" value="Default" />
       <updated>1757003493939</updated>
       <workItem from="1757003494981" duration="10998000" />
-      <workItem from="1757063153822" duration="5553000" />
+      <workItem from="1757063153822" duration="11408000" />
     </task>
     <servers />
   </component>

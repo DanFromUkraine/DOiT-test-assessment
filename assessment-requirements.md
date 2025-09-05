@@ -28,8 +28,8 @@
 
 - Hero‑секція з великим заголовком і підзаголовком
 - Дві головні клік‑зони (Button):
-    - «Переглянути пости» → /posts
-    - «Додати пост» → /posts/create
+     - «Переглянути пости» → /posts
+     - «Додати пост» → /posts/create
 - AppBar (синій, \#2196f3) з Menu‑кнопкою, назвою, перемикачем теми
 - Drawer: посилання на «Головна», «Усі пости», «Створити пост»
 
@@ -39,18 +39,18 @@
 - Пошук за заголовком (TextField з іконкою Search)
 - Skeleton‑лоадери до завантаження даних
 - Grid із Card‑компонентами:
-    - CardHeader (Avatar, title, subheader, Delete‑action)
-    - CardContent (короткий уривок body)
-    - CardActions (перехід на пост)
+     - CardHeader (Avatar, title, subheader, Delete‑action)
+     - CardContent (короткий уривок body)
+     - CardActions (перехід на пост)
 - SpeedDial для швидкого переходу на створення поста
 
 3\. **Деталі поста** **/posts/\[id\]**
 
 - AppBar \+ Drawer
 - Поки — CircularProgress, потім Card:
-    - CardHeader (Avatar, title, subheader)
-    - CardContent (повний текст)
-    - CardActions: кнопки «Видалити» й «До списку»
+     - CardHeader (Avatar, title, subheader)
+     - CardContent (повний текст)
+     - CardActions: кнопки «Видалити» й «До списку»
 - Dialog з коментарями (відкривається через Comment‑icon у AppBar, Badge)
 
 4\. **Створення поста** **/posts/create**
@@ -67,13 +67,13 @@
 
 - Public GitHub repo із кодом;
 - README.md з:
-    1. Кроками для локального запуску (npm install, npm run dev)
-    2. Описом структури папок
-    3. Рекомендаціями:
-        - юніт‑тести
-        - використання RTK Query
-        - адаптивність/мобільна версія
-        - покращення UX (spinners, помилки тощо)
+     1. Кроками для локального запуску (npm install, npm run dev)
+     2. Описом структури папок
+     3. Рекомендаціями:
+           - юніт‑тести
+           - використання RTK Query
+           - адаптивність/мобільна версія
+           - покращення UX (spinners, помилки тощо)
 
 ---
 

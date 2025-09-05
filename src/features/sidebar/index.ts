@@ -1,21 +1,21 @@
-import {createSlice} from "@reduxjs/toolkit";
-import {SidebarState} from "@/src/features/types";
-
+import { createSlice } from "@reduxjs/toolkit";
+import { SidebarState } from "@/src/features/types";
 
 const initialState: SidebarState = {
-    isOpened: false
-}
+      isOpened: false,
+};
 
 export const sidebarSlice = createSlice({
-    name: "theme",
-    initialState,
-    reducers: {
-        open(state) {
-            state.isOpened = true
-        }, close(state) {
-            state.isOpened = false
-        }
-    }
-})
+      name: "theme",
+      initialState,
+      reducers: {
+            open(state) {
+                  state.isOpened = true;
+            },
+            close(state) {
+                  state.isOpened = false;
+            },
+      },
+});
 
 export default sidebarSlice.reducer;

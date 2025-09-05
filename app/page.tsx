@@ -1,5 +1,9 @@
-"use client"
+"use client";
+
+import HeroSection from "@/src/components/HeroSection";
 
 export default function page() {
-    return <div>hello</div>
+      return <main className="w-full flex justify-center">
+            <HeroSection />
+      </main>;
 }

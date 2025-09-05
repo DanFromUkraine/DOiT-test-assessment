@@ -1,6 +1,6 @@
-import {useInitThemeFromLS} from "@/src/hooks/theme";
+import { useInitThemeFromLS } from "@/src/hooks/theme";
 
 export default function HookInitializers() {
-    useInitThemeFromLS();
-    return <></>
+      useInitThemeFromLS();
+      return <></>;
 }
