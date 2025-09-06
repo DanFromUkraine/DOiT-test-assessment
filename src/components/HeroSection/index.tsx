@@ -3,6 +3,7 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import AddCircleIcon from "@mui/icons-material/AddCircle";
 import FormatListBulletedIcon from "@mui/icons-material/FormatListBulleted";
+import Link from "next/link";
 
 export default function HeroSection() {
       return (
@@ -15,18 +16,23 @@ export default function HeroSection() {
                         команди!
                   </Typography>
                   <Box className="w-full flex justify-center gap-4">
-                        <Button
-                              variant="contained"
-                              startIcon={<FormatListBulletedIcon />}
-                        >
-                              ПЕРЕГЛЯНУТИ ПОСТИ
-                        </Button>
-                        <Button
-                              variant="outlined"
-                              startIcon={<AddCircleIcon />}
-                        >
-                              ДОДАТИ ПОСТ
-                        </Button>
+                        {/* can refactor here */}
+                        <Link href="/posts">
+                              <Button
+                                    variant="contained"
+                                    startIcon={<FormatListBulletedIcon />}
+                              >
+                                    ПЕРЕГЛЯНУТИ ПОСТИ
+                              </Button>
+                        </Link>
+                        <Link href="/posts/create">
+                              <Button
+                                    variant="outlined"
+                                    startIcon={<AddCircleIcon />}
+                              >
+                                    ДОДАТИ ПОСТ
+                              </Button>
+                        </Link>
                   </Box>
             </Box>
       );

@@ -1,23 +1,28 @@
+"use client";
+
 import { useDispatch, useSelector } from "react-redux";
-import { sidebarSlice } from "@/src/features/sidebar";
 import { RootState } from "@/src/store/store";
-import { SidebarState } from "@/src/features/types";
+import { CommentsModalState } from "@/src/features/types";
+import { commentsModalSlice } from "@/src/features/commentsModal/index";
 
-const { open, close } = sidebarSlice.actions;
+const { openModal, closeModal } = commentsModalSlice.actions;
 
-export const useSelectSidebarInfo = () =>
-      useSelector<RootState, SidebarState>((state) => state.sidebar);
+export const useSelectCommentModalInfo = () =>
+      useSelector<RootState, CommentsModalState>(
+            (state) => state.commentsModal,
+      );
 
-export function useGetOpenSidebarFn() {
+export function useGetOpenCommentsModalFn() {
       const dispatch = useDispatch();
       return () => {
-            dispatch(open());
+            console.log("should now open");
+            dispatch(openModal());
       };
 }
 
-export function useGetCloseSidebarFn() {
+export function useGetCloseCommentsModalFn() {
       const dispatch = useDispatch();
       return () => {
-            dispatch(close());
+            dispatch(closeModal());
       };
 }

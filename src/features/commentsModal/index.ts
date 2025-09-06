@@ -1,21 +1,21 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { SidebarState } from "@/src/features/types";
+import { CommentsModalState } from "@/src/features/types";
 
-const initialState: SidebarState = {
+const initialState: CommentsModalState = {
       isOpened: false,
 };
 
-export const sidebarSlice = createSlice({
-      name: "theme",
+export const commentsModalSlice = createSlice({
+      name: "commentsModalSlice",
       initialState,
       reducers: {
-            open(state) {
+            openModal(state) {
                   state.isOpened = true;
             },
-            close(state) {
+            closeModal(state) {
                   state.isOpened = false;
             },
       },
 });
 
-export default sidebarSlice.reducer;
+export default commentsModalSlice.reducer;
