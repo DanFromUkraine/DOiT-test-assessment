@@ -6,7 +6,7 @@ const initialState: SidebarState = {
 };
 
 export const sidebarSlice = createSlice({
-      name: "theme",
+      name: "sidebar",
       initialState,
       reducers: {
             open(state) {
