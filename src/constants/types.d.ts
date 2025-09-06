@@ -7,3 +7,15 @@ export type NavigationItem = {
 };
 
 export type NavigationList = NavigationItem[];
+
+export type Step = {
+      label: string;
+      inputName: string;
+      inputLabel: string;
+      type: "input";
+};
+
+export type StepWithNoBody = {
+      label: string;
+      type: "empty";
+};
