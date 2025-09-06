@@ -6,8 +6,10 @@ import StepperList from "@/app/posts/create/StepperList";
 import RenderStepBodies from "./RenderStepBodies";
 import StepNavigation from "@/app/posts/create/StepNavigation";
 import { StepsContextProvider } from "@/src/contexts/createPostStepsContext";
+import { CreatePostModalContextProvider } from "@/src/contexts/createPostPreviewModalContext";
+import NewPostPreviewModal from "@/app/posts/create/NewPostPreviewModal";
 
-interface FormData {
+export interface FormData {
       title: string;
       body: string;
 }
@@ -19,22 +21,26 @@ export default function CreatePostPage() {
                   body: "",
             },
       });
+
       return (
             <StepsContextProvider>
-                  <FormProvider {...methods}>
-                        <form>
-                              <Box
-                                    component="main"
-                                    className="flex justify-center pt-12"
-                              >
-                                    <Box className="flex w-[40%] flex-col gap-4 p-6 rounded-lg shadow-md bg-white">
-                                          <StepperList />
-                                          <RenderStepBodies />
-                                          <StepNavigation />
+                  <CreatePostModalContextProvider>
+                        <FormProvider {...methods}>
+                              <NewPostPreviewModal />
+                              <form>
+                                    <Box
+                                          component="main"
+                                          className="flex justify-center pt-12"
+                                    >
+                                          <Box className="flex w-[40%] flex-col gap-4 p-6 rounded-lg shadow-md bg-white">
+                                                <StepperList />
+                                                <RenderStepBodies />
+                                                <StepNavigation />
+                                          </Box>
                                     </Box>
-                              </Box>
-                        </form>
-                  </FormProvider>
+                              </form>
+                        </FormProvider>
+                  </CreatePostModalContextProvider>
             </StepsContextProvider>
       );
 }

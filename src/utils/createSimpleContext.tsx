@@ -1,4 +1,5 @@
 import { Context, createContext, ReactNode } from "react";
+import { useContextEnhanced } from "@/src/hooks/useContextEnhanced";
 
 interface SimpleCtxProviderProps<DataType> {
       defaultData: DataType;
@@ -11,9 +12,11 @@ export default function createSimpleContextProviderPair<
 >({
       defaultData,
       useGetData,
+      contextName,
 }: {
       defaultData: DataType;
       useGetData: () => DataType;
+      contextName: string;
 }) {
       const Context = createContext<DataType>(defaultData);
 
@@ -23,5 +26,9 @@ export default function createSimpleContextProviderPair<
             return <Context.Provider value={data}>{children}</Context.Provider>;
       };
 
-      return [Context, Provider] as const;
+      return [
+            Context,
+            Provider,
+            () => useContextEnhanced({ Context, contextName }),
+      ] as const;
 }
