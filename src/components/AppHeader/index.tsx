@@ -5,6 +5,7 @@ import Toolbar from "@mui/material/Toolbar";
 import ChangeThemeButton from "@/src/components/AppHeader/ChangeThemeButton";
 import OpenSidebarButton from "@/src/components/AppHeader/OpenSidebarButton";
 import Logo from "@/src/components/AppHeader/Logo";
+import OpenCommentsButton from "@/src/components/AppHeader/OpenCommentsButton";
 
 export default function Header() {
       return (
@@ -14,6 +15,7 @@ export default function Header() {
                               <OpenSidebarButton />
                               <Logo />
                               <ChangeThemeButton />
+                              <OpenCommentsButton />
                         </Toolbar>
                   </AppBar>
             </Box>

@@ -5,25 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1c9410c4-6ed4-437c-b79b-b58d85d9220c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/FilteredPosts/Post/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/FilteredPosts/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/SearchBar/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/postsApi/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/postsApi/types.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/prettier.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/posts/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/posts/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/DrawerNav/NavItem/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DrawerNav/NavItem/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/DrawerNav/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DrawerNav/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/posts/[id]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/posts/[id]/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AppHeader/OpenCommentsButton/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AppHeader/OpenCommentsButton/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AppHeader/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AppHeader/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CommentsModal/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CommentsModal/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/FilteredPosts/Post/PostPreviewPartial/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/FilteredPosts/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FilteredPosts/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/HeroSection/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HeroSection/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/navigation.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/navigation.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/types.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/types.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hooks/theme.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/theme.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/commentsModal/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/commentsModal/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/commentsModal/utils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/commentsModal/utils.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/sidebar/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/sidebar/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/types.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/types.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/useGetId.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useGetId.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/store.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,25 +39,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;js.debugger.nextJs.config.created.client&quot;: &quot;true&quot;,
-    &quot;js.debugger.nextJs.config.created.server&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/linkava/docs/assessments/do-it/src/features&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/home/linkava/docs/assessments/do-it/node_modules/prettier&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/home/linkava/docs/assessments/do-it/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "js.debugger.nextJs.config.created.client": "true",
+    "js.debugger.nextJs.config.created.server": "true",
+    "last_opened_file_path": "/home/linkava/docs/assessments/do-it/src/features/commentsModal",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "/home/linkava/docs/assessments/do-it/node_modules/prettier",
+    "ts.external.directory.path": "/home/linkava/docs/assessments/do-it/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RdControllerToolWindowsLayoutState" isNewUi="true">
     <layout>
       <window_info id="Bookmarks" side_tool="true" />
@@ -71,7 +65,7 @@
       <window_info id="Backup and Sync History" />
       <window_info id="Commit_Guest" show_stripe_button="false" />
       <window_info id="Pull Requests" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.27838492" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23466909" />
       <window_info id="Commit" order="1" weight="0.25" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" />
@@ -81,21 +75,22 @@
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Problems" order="1" />
       <window_info anchor="bottom" id="Problems View" order="2" />
-      <window_info anchor="bottom" id="Terminal" order="3" weight="0.33044806" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="3" visible="true" weight="0.3141548" />
       <window_info anchor="bottom" id="Services" order="4" />
-      <window_info anchor="bottom" id="Find" order="5" show_stripe_button="false" weight="0.33044806" />
+      <window_info anchor="bottom" id="Find" order="5" weight="0.33044806" />
       <window_info anchor="right" id="Endpoints" />
       <window_info anchor="right" id="documentation.v2" show_stripe_button="false" side_tool="true" />
-      <window_info anchor="right" id="Coverage" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Notifications" order="0" weight="0.25" />
       <window_info anchor="right" id="AIAssistant" order="1" weight="0.25" />
       <window_info anchor="right" id="Database" order="2" weight="0.2498482" />
       <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
       <window_info anchor="right" id="Maven" order="4" weight="0.25" />
+      <window_info anchor="right" id="Coverage" order="5" side_tool="true" weight="0.3299939" />
     </layout>
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/features/commentsModal" />
       <recent name="$PROJECT_DIR$/src/features" />
       <recent name="$PROJECT_DIR$/src/store" />
       <recent name="$PROJECT_DIR$/src/constants" />
@@ -137,10 +132,23 @@
       <updated>1757003493939</updated>
       <workItem from="1757003494981" duration="10998000" />
       <workItem from="1757063153822" duration="11408000" />
+      <workItem from="1757097639034" duration="8073000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/AppHeader/OpenSidebarButton/index.tsx</url>
+          <line>2</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

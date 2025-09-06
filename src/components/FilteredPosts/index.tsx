@@ -2,7 +2,7 @@
 
 import List from "@mui/material/List";
 import { useDeferredValue } from "react";
-import PostCard from "./Post";
+import PostCard from "../Post";
 import { Post } from "@/src/services/postsApi/types";
 
 export default function FilteredPosts({
@@ -19,8 +19,12 @@ export default function FilteredPosts({
 
       return (
             <List className="postCardsContainer">
-                  {filteredPosts.map((post, i) => (
-                        <PostCard key={post.id} {...post} />
+                  {filteredPosts.map((post) => (
+                        <PostCard
+                              variant="post-preview"
+                              key={post.id}
+                              {...post}
+                        />
                   ))}
             </List>
       );
