@@ -5,6 +5,7 @@ import Box from "@mui/material/Box";
 import { useState } from "react";
 import { useGetAllPostsQuery } from "@/src/services/postsApi";
 import FilteredPosts from "@/src/components/FilteredPosts";
+import CreatePostSpeedDial from "@/src/components/CreatePostSpeedDial";
 
 export default function AllPostsPage() {
       const [query, setQuery] = useState("");
@@ -16,6 +17,7 @@ export default function AllPostsPage() {
                         <SearchBar setQuery={setQuery} />
                         <FilteredPosts posts={data || []} searchQuery={query} />
                   </Box>
+                  <CreatePostSpeedDial />
             </Box>
       );
 }

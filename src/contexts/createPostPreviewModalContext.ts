@@ -7,16 +7,13 @@ interface CreatePostModalContextDataType {
       closeModal: () => void;
 }
 
-export const [
-      CreatePostModalContext,
-      CreatePostModalContextProvider,
-      usePostPreviewModalContext,
-] = createSimpleContextProviderPair<CreatePostModalContextDataType>({
-      defaultData: {
-            isShown: false,
-            openModal() {},
-            closeModal() {},
-      },
-      useGetData: useModalShown,
-      contextName: "'Create post page modal opened context'",
-});
+export const [CreatePostModalContextProvider, usePostPreviewModalContext] =
+      createSimpleContextProviderPair<CreatePostModalContextDataType>({
+            defaultData: {
+                  isShown: false,
+                  openModal() {},
+                  closeModal() {},
+            },
+            useGetData: useModalShown,
+            contextName: "'Create post page modal opened context'",
+      });

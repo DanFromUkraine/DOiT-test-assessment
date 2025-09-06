@@ -4,7 +4,7 @@ import { Box, Button, Dialog, Divider } from "@mui/material";
 import { usePostPreviewModalContext } from "@/src/contexts/createPostPreviewModalContext";
 import { useFormContext } from "react-hook-form";
 import Typography from "@mui/material/Typography";
-import { type FormData } from "../page";
+import { type FormData } from "../../../app/posts/create/page";
 import { useEffect, useState } from "react";
 import { useStepsContext } from "@/src/contexts/createPostStepsContext";
 

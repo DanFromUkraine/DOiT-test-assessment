@@ -5,15 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1c9410c4-6ed4-437c-b79b-b58d85d9220c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/posts/create/NewPostPreviewModal/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/posts/create/StepNavigation/MoveBackButton/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/posts/create/StepNavigation/MoveNextButton/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/contexts/createPostPreviewModalContext.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hooks/useModalShown.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/StepperContainer/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/contexts/createPostSnackbarContext.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/contexts/types.d.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/posts/create/StepNavigation/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/posts/create/StepNavigation/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/posts/create/NewPostPreviewModal/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NewPostPreviewModal/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/posts/create/RenderStepBodies/StepBody/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/StepperContainer/RenderStepBodies/StepBody/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/posts/create/RenderStepBodies/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/StepperContainer/RenderStepBodies/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/posts/create/StepNavigation/MoveBackButton/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/StepperContainer/StepNavigation/MoveBackButton/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/posts/create/StepNavigation/MoveNextButton/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/StepperContainer/StepNavigation/MoveNextButton/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/posts/create/StepNavigation/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/StepperContainer/StepNavigation/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/posts/create/StepperList/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/StepperContainer/StepperList/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/posts/create/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/posts/create/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/posts/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/posts/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AppHeader/ChangeThemeButton/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AppHeader/ChangeThemeButton/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DrawerNav/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DrawerNav/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Initializers/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/contexts/createPostModalVisible/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CreatePostSpeedDial/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/contexts/createPostPreviewModalContext.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/contexts/createPostPreviewModalContext.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/contexts/createPostStepsContext.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/contexts/createPostStepsContext.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/theme/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/theme/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/theme.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils/createSimpleContext.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/createSimpleContext.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,8 +83,8 @@
       <window_info anchor="bottom" id="File Transfer" />
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Problems" order="1" />
-      <window_info anchor="bottom" id="Problems View" order="2" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="3" visible="true" weight="0.031059064" />
+      <window_info active="true" anchor="bottom" id="Problems View" order="2" visible="true" weight="0.17464358" />
+      <window_info anchor="bottom" id="Terminal" order="3" weight="0.17464358" />
       <window_info anchor="bottom" id="Services" order="4" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.33044806" />
       <window_info anchor="right" id="Endpoints" />
@@ -93,9 +106,11 @@
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/posts/create/RenderSteps" />
+      <recent name="$PROJECT_DIR$/src/styles" />
       <recent name="$PROJECT_DIR$/src/components" />
-      <recent name="$PROJECT_DIR$/app/lib/redux-toolkit/features/theme" />
+      <recent name="$PROJECT_DIR$/app/posts/create" />
+      <recent name="$PROJECT_DIR$/app/posts/create/StepperContainer" />
+      <recent name="$PROJECT_DIR$/app/posts/create/RenderSteps" />
     </key>
   </component>
   <component name="RunManager" selected="npm.Next.js: server-side">
@@ -135,16 +150,5 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/components/AppHeader/OpenSidebarButton/index.tsx</url>
-          <line>2</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

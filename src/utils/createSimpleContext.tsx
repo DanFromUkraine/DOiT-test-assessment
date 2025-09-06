@@ -26,9 +26,7 @@ export default function createSimpleContextProviderPair<
             return <Context.Provider value={data}>{children}</Context.Provider>;
       };
 
-      return [
-            Context,
-            Provider,
-            () => useContextEnhanced({ Context, contextName }),
-      ] as const;
+      const getter = () => useContextEnhanced({ Context, contextName });
+
+      return [Provider, getter] as const;
 }

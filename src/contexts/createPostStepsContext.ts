@@ -1,6 +1,5 @@
 import createSimpleContextProviderPair from "@/src/utils/createSimpleContext";
 import { STEPS } from "@/src/constants/create-post-page-steps";
-import { useContextEnhanced } from "@/src/hooks/useContextEnhanced";
 import { Step, StepWithNoBody } from "@/src/constants/types";
 import { useSteps } from "@/src/hooks/useSteps";
 
@@ -12,7 +11,7 @@ export type StepsContextDataType = {
       setStep: (arg1: number) => void;
 };
 
-export const [StepsContext, StepsContextProvider] =
+export const [StepsContextProvider, useStepsContext] =
       createSimpleContextProviderPair<StepsContextDataType, number>({
             defaultData: {
                   allSteps: STEPS,
@@ -23,10 +22,4 @@ export const [StepsContext, StepsContextProvider] =
             },
             useGetData: useSteps,
             contextName: "'Create post page steps context'",
-      });
-
-export const useStepsContext = () =>
-      useContextEnhanced({
-            Context: StepsContext,
-            contextName: "Create post page steps context",
       });

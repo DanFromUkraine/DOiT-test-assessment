@@ -8,7 +8,7 @@ import {
 import { NAVIGATION_LIST } from "@/src/constants/navigation";
 import NavItem from "@/src/components/DrawerNav/NavItem";
 
-export default function Sidebar() {
+export default function DrawerContainer() {
       const { isOpened } = useSelectSidebarInfo();
       const hideSidebar = useGetCloseSidebarFn();
 
