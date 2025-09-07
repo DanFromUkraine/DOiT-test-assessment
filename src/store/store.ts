@@ -7,6 +7,7 @@ import { postsAPI } from "@/src/services/postsApi";
 import commentsVisibilityReducer from "@/src/features/commentsVisibilitySlice";
 import snackbarVisibilityReducer from "@/src/features/snackbarVisibilitySlice";
 import createPostPreviewVisibilityReducer from "@/src/features/createPostPreviewVisibilitySlice";
+import postsReducer from "@/src/features/postsSlice";
 
 export const store = configureStore({
       reducer: {
@@ -15,6 +16,7 @@ export const store = configureStore({
             commentsVisibility: commentsVisibilityReducer,
             snackbarVisibility: snackbarVisibilityReducer,
             createPostPreviewVisibility: createPostPreviewVisibilityReducer,
+            posts: postsReducer,
             [postsAPI.reducerPath]: postsAPI.reducer,
       },
       middleware: (getDefaultMiddleware) =>
