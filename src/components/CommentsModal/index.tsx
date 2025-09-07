@@ -1,16 +1,16 @@
 "use client";
 
-import { Divider, List, Modal, Typography } from "@mui/material";
-import {
-      useGetCloseCommentsModalFn,
-      useSelectCommentModalInfo,
-} from "@/src/features/commentsModal/utils";
+import { Dialog, Divider, List, Typography } from "@mui/material";
 import { useGetCommentsForPostQuery } from "@/src/services/postsApi";
 import Box from "@mui/material/Box";
+import {
+      useCloseComments,
+      useSelectCommentsVisibility,
+} from "@/src/features/commentsVisibilitySlice";
 
 export default function CommentsModal({ postId }: { postId: number }) {
-      const { isOpened } = useSelectCommentModalInfo();
-      const closeModal = useGetCloseCommentsModalFn();
+      const { isOpened } = useSelectCommentsVisibility();
+      const closeDialog = useCloseComments();
 
       const { data, isLoading, isError, error } =
             useGetCommentsForPostQuery(postId);
@@ -18,12 +18,12 @@ export default function CommentsModal({ postId }: { postId: number }) {
       if (isError) throw error;
 
       return (
-            <Modal
+            <Dialog
                   open={isOpened}
-                  onClose={closeModal}
+                  onClose={closeDialog}
                   className="flex justify-center items-center"
             >
-                  <Box className="w-[45%] bg-white dark:bg-containerDarkMode rounded-md">
+                  <Box className="bg-white dark:bg-containerDarkMode rounded-md">
                         <Typography className="p-6 dark:text-white">
                               КОМЕНТАРІ
                         </Typography>
@@ -48,6 +48,6 @@ export default function CommentsModal({ postId }: { postId: number }) {
                               )}
                         </List>
                   </Box>
-            </Modal>
+            </Dialog>
       );
 }

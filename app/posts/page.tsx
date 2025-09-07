@@ -15,7 +15,11 @@ export default function AllPostsPage() {
             <Box className="flex justify-center py-5" component="main">
                   <Box className="w-10/12 flex flex-col gap-3">
                         <SearchBar setQuery={setQuery} />
-                        <FilteredPosts posts={data || []} searchQuery={query} />
+                        <FilteredPosts
+                              posts={data}
+                              searchQuery={query}
+                              isLoading={isLoading}
+                        />
                   </Box>
                   <CreatePostSpeedDial />
             </Box>

@@ -2,7 +2,7 @@ import IconButton from "@mui/material/IconButton";
 import * as React from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 
-export default function OpenSidebarButtonUI({
+export default function OpenDrawerButtonUI({
       onClick,
 }: {
       onClick: () => void;

@@ -1,19 +1,17 @@
 "use client";
 
 import { StepsContextProvider } from "@/src/contexts/createPostStepsContext";
-import { CreatePostModalContextProvider } from "@/src/contexts/createPostPreviewModalContext";
 import StepperContainer from "@/src/components/StepperContainer";
-import { SnackbarContextProvider } from "@/src/contexts/createPostSnackbarContext";
-import NewPostPreviewModal from "@/src/components/NewPostPreviewModal";
+import { Box } from "@mui/material";
+import SnackbarContainer from "@/src/components/StepperContainer/Snackbar";
 
 export default function CreatePostPage() {
       return (
-            <StepsContextProvider>
-                  <CreatePostModalContextProvider>
-                        <SnackbarContextProvider>
-                              <StepperContainer />
-                        </SnackbarContextProvider>
-                  </CreatePostModalContextProvider>
-            </StepsContextProvider>
+            <Box component="main" className="flex w-full justify-center pt-12 ">
+                  <SnackbarContainer />
+                  <StepsContextProvider>
+                        <StepperContainer />
+                  </StepsContextProvider>
+            </Box>
       );
 }

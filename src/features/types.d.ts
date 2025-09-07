@@ -1,8 +1,12 @@
-export interface SidebarState {
+export interface DrawerState {
       isOpened: boolean;
 }
 
 export interface CommentsModalState {
+      isOpened: boolean;
+}
+
+export interface SnackbarState {
       isOpened: boolean;
 }
 

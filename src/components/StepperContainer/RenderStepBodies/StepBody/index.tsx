@@ -1,9 +1,10 @@
 "use client";
 
 import { Controller, useFormContext } from "react-hook-form";
-import { TextField } from "@mui/material";
+import { InputAdornment, TextField } from "@mui/material";
 import { useStepsContext } from "@/src/contexts/createPostStepsContext";
 import { clsx } from "clsx";
+import TitleIcon from "@mui/icons-material/Title";
 
 export function StepInputBody({
       inputName,
@@ -27,7 +28,21 @@ export function StepInputBody({
                               defaultValue={field.value}
                               required
                               label={label}
-                              className={clsx("dark:border-white", {
+                              variant="outlined"
+                              slotProps={{
+                                    input: {
+                                          startAdornment: (
+                                                <InputAdornment position="start">
+                                                      <TitleIcon className="dark:text-white" />
+                                                </InputAdornment>
+                                          ),
+                                          className: "dark:text-white",
+                                    },
+                                    inputLabel: {
+                                          className: "dark:text-white",
+                                    },
+                              }}
+                              className={clsx("ring-white myTextField", {
                                     hidden: index !== currentStep,
                               })}
                         />
