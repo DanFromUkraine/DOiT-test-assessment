@@ -27,7 +27,7 @@ export function StepInputBody({
                               defaultValue={field.value}
                               required
                               label={label}
-                              className={clsx({
+                              className={clsx("dark:border-white", {
                                     hidden: index !== currentStep,
                               })}
                         />

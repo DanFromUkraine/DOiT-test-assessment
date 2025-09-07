@@ -5,29 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1c9410c4-6ed4-437c-b79b-b58d85d9220c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/StepperContainer/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/contexts/createPostSnackbarContext.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/contexts/types.d.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/posts/create/NewPostPreviewModal/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NewPostPreviewModal/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/posts/create/RenderStepBodies/StepBody/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/StepperContainer/RenderStepBodies/StepBody/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/posts/create/RenderStepBodies/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/StepperContainer/RenderStepBodies/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/posts/create/StepNavigation/MoveBackButton/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/StepperContainer/StepNavigation/MoveBackButton/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/posts/create/StepNavigation/MoveNextButton/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/StepperContainer/StepNavigation/MoveNextButton/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/posts/create/StepNavigation/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/StepperContainer/StepNavigation/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/posts/create/StepperList/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/StepperContainer/StepperList/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/posts/create/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/posts/create/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/posts/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/posts/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AppHeader/ChangeThemeButton/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AppHeader/ChangeThemeButton/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/DrawerNav/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DrawerNav/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Initializers/index.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/contexts/createPostModalVisible/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CreatePostSpeedDial/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/contexts/createPostPreviewModalContext.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/contexts/createPostPreviewModalContext.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/contexts/createPostStepsContext.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/contexts/createPostStepsContext.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/theme/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/theme/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hooks/theme.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/createSimpleContext.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/createSimpleContext.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NewPostPreviewModal/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NewPostPreviewModal/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Post/PostHeader/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Post/PostHeader/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Post/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Post/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/StepperContainer/RenderStepBodies/StepBody/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/StepperContainer/RenderStepBodies/StepBody/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/StepperContainer/StepperList/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/StepperContainer/StepperList/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/StepperContainer/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/StepperContainer/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/postsApi/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/postsApi/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +22,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="QODANA_PROBLEMS_VIEW_TAB" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
@@ -74,7 +63,7 @@
       <window_info id="Backup and Sync History" />
       <window_info id="Commit_Guest" show_stripe_button="false" />
       <window_info id="Pull Requests" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23466909" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19763206" />
       <window_info id="Commit" order="1" weight="0.25" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" />
@@ -83,8 +72,8 @@
       <window_info anchor="bottom" id="File Transfer" />
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Problems" order="1" />
-      <window_info active="true" anchor="bottom" id="Problems View" order="2" visible="true" weight="0.17464358" />
-      <window_info anchor="bottom" id="Terminal" order="3" weight="0.17464358" />
+      <window_info anchor="bottom" id="Problems View" order="2" weight="0.36710793" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="3" visible="true" weight="0.17057025" />
       <window_info anchor="bottom" id="Services" order="4" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.33044806" />
       <window_info anchor="right" id="Endpoints" />
@@ -145,6 +134,7 @@
       <workItem from="1757003494981" duration="10998000" />
       <workItem from="1757063153822" duration="11408000" />
       <workItem from="1757097639034" duration="8073000" />
+      <workItem from="1757242324357" duration="2295000" />
     </task>
     <servers />
   </component>

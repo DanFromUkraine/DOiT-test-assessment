@@ -11,11 +11,17 @@ export default function StepperList() {
             <Stepper activeStep={currentStep} alternativeLabel className=" ">
                   {allSteps.map(({ label }, i) => (
                         <Step key={label} disabled={false}>
-                              <StepButton
-                                    onClick={() => setStep(i)}
-                                    className="z-50"
-                              >
-                                    <StepLabel>{label}</StepLabel>
+                              <StepButton onClick={() => setStep(i)}>
+                                    <StepLabel
+                                          slotProps={{
+                                                label: {
+                                                      className:
+                                                            "dark:text-white",
+                                                },
+                                          }}
+                                    >
+                                          {label}
+                                    </StepLabel>
                               </StepButton>
                         </Step>
                   ))}

@@ -1,12 +1,13 @@
 "use client";
+//# refactoring is needed
 
 import { Box, Button, Dialog, Divider } from "@mui/material";
 import { usePostPreviewModalContext } from "@/src/contexts/createPostPreviewModalContext";
 import { useFormContext } from "react-hook-form";
 import Typography from "@mui/material/Typography";
-import { type FormData } from "../../../app/posts/create/page";
 import { useEffect, useState } from "react";
 import { useStepsContext } from "@/src/contexts/createPostStepsContext";
+import { FormData } from "../StepperContainer";
 
 export default function NewPostPreviewModal() {
       const { isShown, closeModal } = usePostPreviewModalContext();
@@ -39,9 +40,15 @@ export default function NewPostPreviewModal() {
             <Dialog
                   open={isShown}
                   onClose={closeModal}
-                  className="flex justify-center items-center"
+                  className="flex justify-center items-center "
+                  slotProps={{
+                        paper: {
+                              className:
+                                    "min-w-[45vw] dark:bg-containerDarkMode",
+                        },
+                  }}
             >
-                  <Box className="flex flex-col min-w-[45vw]">
+                  <Box className="flex flex-col">
                         <Typography className="p-5">
                               Попередній перегляд
                         </Typography>
