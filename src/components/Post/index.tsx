@@ -22,7 +22,12 @@ export default function PostCard({
                         "w-10/12": variant === "post-details",
                   })}
             >
-                  <PostHeader title={title} userId={userId} variant={variant} />
+                  <PostHeader
+                        title={title}
+                        userId={userId}
+                        variant={variant}
+                        postId={id}
+                  />
                   {variant === "post-preview" ? (
                         <PostPreviewFragment {...{ body, id }} />
                   ) : (

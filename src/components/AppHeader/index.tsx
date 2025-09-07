@@ -10,7 +10,7 @@ import OpenCommentsButton from "@/src/components/AppHeader/OpenCommentsButton";
 export default function Header() {
       return (
             <Box sx={{ flexGrow: 1 }}>
-                  <AppBar position="static">
+                  <AppBar position="static" className="bg-[#2196f3]">
                         <Toolbar>
                               <OpenSidebarButton />
                               <Logo />

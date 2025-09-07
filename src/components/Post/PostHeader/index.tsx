@@ -4,16 +4,24 @@ import { Avatar } from "@mui/material";
 import { PostCardVariants } from "@/src/components/Post";
 import IconButton from "@mui/material/IconButton";
 import DeleteIcon from "@mui/icons-material/Delete";
+import { useDeletePostMutation } from "@/src/services/postsApi";
 
 export default function PostHeader({
       title,
       userId,
       variant,
+      postId,
 }: {
       title: string;
       userId: number;
       variant: PostCardVariants;
+      postId: number;
 }) {
+      const [deletePost, { isLoading }] = useDeletePostMutation();
+      const handleClick = () => {
+            deletePost(postId);
+      };
+
       return (
             <Box className="flex items-center w-full">
                   <Avatar className="mr-2">{title[0]}</Avatar>
@@ -25,7 +33,10 @@ export default function PostHeader({
                         >{`User ${userId}`}</Typography>
                   </Box>
                   {variant === "post-preview" && (
-                        <IconButton className="ml-auto mb-auto">
+                        <IconButton
+                              className="ml-auto mb-auto"
+                              onClick={handleClick}
+                        >
                               <DeleteIcon className="text-red-500" />
                         </IconButton>
                   )}
