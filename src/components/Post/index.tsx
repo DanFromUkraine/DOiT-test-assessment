@@ -31,7 +31,7 @@ export default function PostCard({
                   {variant === "post-preview" ? (
                         <PostPreviewFragment {...{ body, id }} />
                   ) : (
-                        <PostDescriptionFragment body={body} />
+                        <PostDescriptionFragment body={body} postId={id} />
                   )}
             </ListItem>
       );

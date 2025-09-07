@@ -1,6 +1,6 @@
 "use client";
 
-import { Divider, List, Modal, Typography } from "@mui/material";
+import { Dialog, Divider, List, Typography } from "@mui/material";
 import {
       useGetCloseCommentsModalFn,
       useSelectCommentModalInfo,
@@ -18,12 +18,12 @@ export default function CommentsModal({ postId }: { postId: number }) {
       if (isError) throw error;
 
       return (
-            <Modal
+            <Dialog
                   open={isOpened}
                   onClose={closeModal}
                   className="flex justify-center items-center"
             >
-                  <Box className="w-[45%] bg-white dark:bg-containerDarkMode rounded-md">
+                  <Box className="bg-white dark:bg-containerDarkMode rounded-md">
                         <Typography className="p-6 dark:text-white">
                               КОМЕНТАРІ
                         </Typography>
@@ -48,6 +48,6 @@ export default function CommentsModal({ postId }: { postId: number }) {
                               )}
                         </List>
                   </Box>
-            </Modal>
+            </Dialog>
       );
 }

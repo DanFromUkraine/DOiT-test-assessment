@@ -2,6 +2,8 @@
 
 import { createSlice } from "@reduxjs/toolkit";
 import { ThemeState } from "@/src/features/types";
+import { useDispatch, useSelector } from "react-redux";
+import { RootState } from "@/src/store/store";
 
 const initialState: ThemeState = {
       theme: "light",
@@ -22,5 +24,20 @@ export const themeSlice = createSlice({
             },
       },
 });
+
+const { toggleTheme, setDark } = themeSlice.actions;
+
+export const useSelectTheme = () =>
+      useSelector<RootState, ThemeState>((state) => state.theme as ThemeState);
+
+export function useToggleTheme() {
+      const dispatch = useDispatch();
+      return () => dispatch(toggleTheme());
+}
+
+export function useSetDarkTheme() {
+      const dispatch = useDispatch();
+      return () => dispatch(setDark());
+}
 
 export default themeSlice.reducer;

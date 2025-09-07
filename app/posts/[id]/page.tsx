@@ -6,6 +6,7 @@ import PostCard from "@/src/components/Post";
 import { Post } from "@/src/services/postsApi/types";
 import { useGetPostId } from "@/src/hooks/useGetId";
 import CommentsModal from "@/src/components/CommentsModal";
+import { CircularProgress } from "@mui/material";
 
 export default function SpecificPost() {
       const id = useGetPostId();
@@ -18,7 +19,7 @@ export default function SpecificPost() {
             <Box component="main" className="flex justify-center pt-12">
                   <CommentsModal postId={id} />
                   {isLoading ? (
-                        <p>hello</p>
+                        <CircularProgress className="mt-10" />
                   ) : (
                         <PostCard {...(data as Post)} variant="post-details" />
                   )}

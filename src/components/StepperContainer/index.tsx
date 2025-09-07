@@ -22,17 +22,13 @@ export default function StepperContainer() {
 
       return (
             <FormProvider {...methods}>
-                  <NewPostPreviewModal />
                   <form>
-                        <Box
-                              component="main"
-                              className="flex justify-center pt-12 "
-                        >
-                              <Box className="flex w-[40%] flex-col gap-4 p-6 rounded-lg shadow-md bg-white dark:bg-containerDarkMode ">
-                                    <StepperList />
-                                    <RenderStepBodies />
-                                    <StepNavigation />
-                              </Box>
+                        <NewPostPreviewModal />
+
+                        <Box className="flex w-[40%] flex-col gap-4 p-6 rounded-lg shadow-md bg-white dark:bg-containerDarkMode ">
+                              <StepperList />
+                              <RenderStepBodies />
+                              <StepNavigation />
                         </Box>
                   </form>
             </FormProvider>

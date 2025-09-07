@@ -11,7 +11,7 @@ import { FormData } from "../StepperContainer";
 
 export default function NewPostPreviewModal() {
       const { isShown, closeModal } = usePostPreviewModalContext();
-      const { getValues, reset } = useFormContext<FormData>();
+      const { getValues } = useFormContext<FormData>();
       const { setStep } = useStepsContext();
       const [formData, setFormData] = useState<FormData>({
             title: "",
@@ -33,7 +33,6 @@ export default function NewPostPreviewModal() {
       const onApproveButtonClick = () => {
             closeModal();
             setStep(0);
-            reset();
       };
 
       return (
@@ -68,7 +67,8 @@ export default function NewPostPreviewModal() {
                               </Button>
                               <Button
                                     variant="contained"
-                                    onClick={onApproveButtonClick}
+                                    // onClick={onApproveButtonClick}
+                                    type="submit"
                               >
                                     ПІДТВЕРДИТИ
                               </Button>

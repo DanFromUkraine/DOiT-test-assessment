@@ -1,16 +1,20 @@
 "use client";
 
 import { configureStore } from "@reduxjs/toolkit";
-import themeReducer from "@/src/features/theme";
-import sidebarReducer from "@/src/features/sidebar";
+import themeReducer from "@/src/features/themeSlice";
+import drawerVisibilityReducer from "@/src/features/drawerVisibilitySlice";
 import { postsAPI } from "@/src/services/postsApi";
-import commentsModalReducer from "@/src/features/commentsModal";
+import commentsVisibilityReducer from "@/src/features/commentsVisibilitySlice";
+import snackbarVisibilityReducer from "@/src/features/snackbarVisibilitySlice";
+import createPostPreviewVisibilityReducer from "@/src/features/createPostPreviewVisibilitySlice";
 
 export const store = configureStore({
       reducer: {
             theme: themeReducer,
-            sidebar: sidebarReducer,
-            commentsModal: commentsModalReducer,
+            drawerVisibility: drawerVisibilityReducer,
+            commentsVisibility: commentsVisibilityReducer,
+            snackbarVisibility: snackbarVisibilityReducer,
+            createPostPreviewVisibility: createPostPreviewVisibilityReducer,
             [postsAPI.reducerPath]: postsAPI.reducer,
       },
       middleware: (getDefaultMiddleware) =>

@@ -10,7 +10,7 @@ export default function SearchBar({
       return (
             <Paper
                   component="form"
-                  className="w-full py-1 bg-transparent px-2 flex items-center rounded-md outline-2 outline-gray-500"
+                  className="w-full py-1 bg-transparent px-2 flex items-center rounded-md outline-1 outline-gray-400"
             >
                   <SearchIcon className=" text-gray-500 dark:text-white" />
                   <InputBase

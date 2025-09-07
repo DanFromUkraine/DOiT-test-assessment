@@ -5,15 +5,41 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1c9410c4-6ed4-437c-b79b-b58d85d9220c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/CircularProgressModal/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/StepperContainer/Snackbar/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/features/createPostPreviewVisibilitySlice.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/features/drawerVisibilitySlice.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/features/snackbarVisibilitySlice.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/features/themeSlice.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/useDeletePostFunction.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/useFormSubmit.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/useSnackBar.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/createVisibilitySlice.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/posts/[id]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/posts/[id]/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/posts/create/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/posts/create/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/posts/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/posts/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AppHeader/OpenCommentsButton/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AppHeader/OpenCommentsButton/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CommentsModal/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CommentsModal/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/FilteredPosts/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FilteredPosts/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/NewPostPreviewModal/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NewPostPreviewModal/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Post/PostDescriptionFragment/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Post/PostDescriptionFragment/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Post/PostHeader/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Post/PostHeader/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Post/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Post/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SearchBar/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchBar/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/StepperContainer/RenderStepBodies/StepBody/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/StepperContainer/RenderStepBodies/StepBody/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/StepperContainer/StepperList/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/StepperContainer/StepperList/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/StepperContainer/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/StepperContainer/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/postsApi/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/postsApi/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/contexts/createPostPreviewModalContext.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/contexts/createPostSnackbarContext.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/commentsModal/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/commentsModal/utils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/commentsVisibilitySlice.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/sidebar/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/sidebar/utils.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/theme/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/theme/utils.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/types.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/types.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/store.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +99,7 @@
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Problems" order="1" />
       <window_info anchor="bottom" id="Problems View" order="2" weight="0.36710793" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="3" visible="true" weight="0.17057025" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="3" visible="true" weight="0.1614053" />
       <window_info anchor="bottom" id="Services" order="4" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.33044806" />
       <window_info anchor="right" id="Endpoints" />
@@ -134,11 +160,23 @@
       <workItem from="1757003494981" duration="10998000" />
       <workItem from="1757063153822" duration="11408000" />
       <workItem from="1757097639034" duration="8073000" />
-      <workItem from="1757242324357" duration="2295000" />
+      <workItem from="1757242324357" duration="13549000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/features/types.d.ts</url>
+          <line>13</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
