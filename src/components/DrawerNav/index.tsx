@@ -1,23 +1,22 @@
 "use client";
 
 import { Box, Drawer, List } from "@mui/material";
-import {
-      useGetCloseSidebarFn,
-      useSelectSidebarInfo,
-} from "@/src/features/sidebar/utils";
 import { NAVIGATION_LIST } from "@/src/constants/navigation";
 import NavItem from "@/src/components/DrawerNav/NavItem";
+import {
+      useCloseDrawer,
+      useSelectDrawerVisibility,
+} from "@/src/features/drawerVisibilitySlice";
 
 export default function DrawerContainer() {
-      const { isOpened } = useSelectSidebarInfo();
-      const hideSidebar = useGetCloseSidebarFn();
+      const { isOpened } = useSelectDrawerVisibility();
+      const closeDrawer = useCloseDrawer();
 
       return (
-            <Drawer open={isOpened} onClose={hideSidebar}>
+            <Drawer open={isOpened} onClose={closeDrawer}>
                   <Box
                         sx={{ width: 250 }}
                         role="presentation"
-                        onClick={hideSidebar}
                         className="dark:bg-containerDarkMode h-full dark:!text-white"
                   >
                         <List>

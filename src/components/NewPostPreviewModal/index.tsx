@@ -1,44 +1,24 @@
 "use client";
 //# refactoring is needed
 
-import { Box, Button, Dialog, Divider } from "@mui/material";
-import { usePostPreviewModalContext } from "@/src/contexts/createPostPreviewModalContext";
-import { useFormContext } from "react-hook-form";
+import { Box, Dialog, Divider } from "@mui/material";
 import Typography from "@mui/material/Typography";
-import { useEffect, useState } from "react";
-import { useStepsContext } from "@/src/contexts/createPostStepsContext";
-import { FormData } from "../StepperContainer";
+import {
+      useClosePreview,
+      useSelectDialogVisibility,
+} from "@/src/features/createPostPreviewVisibilitySlice";
+import EditButton from "@/src/components/NewPostPreviewModal/EditButton";
+import ApproveButton from "@/src/components/NewPostPreviewModal/ApproveButton";
+import PreviewContent from "@/src/components/NewPostPreviewModal/PreviewContent";
 
 export default function NewPostPreviewModal() {
-      const { isShown, closeModal } = usePostPreviewModalContext();
-      const { getValues } = useFormContext<FormData>();
-      const { setStep } = useStepsContext();
-      const [formData, setFormData] = useState<FormData>({
-            title: "",
-            body: "",
-      });
-
-      console.log("render");
-
-      useEffect(() => {
-            const data = getValues();
-            setFormData(data);
-      }, [isShown]);
-
-      const onEditButtonClick = () => {
-            closeModal();
-            setStep(0);
-      };
-
-      const onApproveButtonClick = () => {
-            closeModal();
-            setStep(0);
-      };
+      const { isOpened } = useSelectDialogVisibility();
+      const closeDialog = useClosePreview();
 
       return (
             <Dialog
-                  open={isShown}
-                  onClose={closeModal}
+                  open={isOpened}
+                  onClose={closeDialog}
                   className="flex justify-center items-center "
                   slotProps={{
                         paper: {
@@ -52,26 +32,11 @@ export default function NewPostPreviewModal() {
                               Попередній перегляд
                         </Typography>
                         <Divider />
-                        <Box className="p-5">
-                              <Typography variant="h5">
-                                    {formData.title}
-                              </Typography>
-                              <Typography variant="subtitle2">
-                                    {formData.body}
-                              </Typography>
-                        </Box>
+                        <PreviewContent />
                         <Divider />
                         <Box className="p-2 flex justify-end gap-2">
-                              <Button onClick={onEditButtonClick}>
-                                    РЕДАГУВАТИ
-                              </Button>
-                              <Button
-                                    variant="contained"
-                                    // onClick={onApproveButtonClick}
-                                    type="submit"
-                              >
-                                    ПІДТВЕРДИТИ
-                              </Button>
+                              <EditButton />
+                              <ApproveButton />
                         </Box>
                   </Box>
             </Dialog>

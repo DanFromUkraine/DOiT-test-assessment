@@ -5,6 +5,7 @@ import { FormData } from "@/src/components/StepperContainer";
 import { useOpenSnackbar } from "@/src/features/snackbarVisibilitySlice";
 import { useCreatePostMutation } from "@/src/services/postsApi";
 import { useFormContext } from "react-hook-form";
+import { useClosePreview } from "@/src/features/createPostPreviewVisibilitySlice";
 
 function formPostData(data: FormData): Post {
       return {
@@ -14,21 +15,16 @@ function formPostData(data: FormData): Post {
       };
 }
 
-function getOnSuccessCallback(openSnackbar: () => void) {
-      return () => {
-            openSnackbar();
-      };
-}
-
 export function useFormSubmit() {
       const { handleSubmit, reset } = useFormContext<FormData>();
       const openSnackbar = useOpenSnackbar();
       const [createPost] = useCreatePostMutation();
+      const closePreviewDialog = useClosePreview();
 
-      return handleSubmit((data) => {
+      return handleSubmit(async (data) => {
             reset();
-            createPost(formPostData(data)).then(
-                  getOnSuccessCallback(openSnackbar),
-            );
+            closePreviewDialog();
+            const res = await createPost(formPostData(data));
+            res && openSnackbar();
       });
 }

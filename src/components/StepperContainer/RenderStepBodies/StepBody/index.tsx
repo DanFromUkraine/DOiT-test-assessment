@@ -28,16 +28,21 @@ export function StepInputBody({
                               defaultValue={field.value}
                               required
                               label={label}
+                              variant="outlined"
                               slotProps={{
                                     input: {
                                           startAdornment: (
                                                 <InputAdornment position="start">
-                                                      <TitleIcon />
+                                                      <TitleIcon className="dark:text-white" />
                                                 </InputAdornment>
                                           ),
+                                          className: "dark:text-white",
+                                    },
+                                    inputLabel: {
+                                          className: "dark:text-white",
                                     },
                               }}
-                              className={clsx("dark:border-white", {
+                              className={clsx("ring-white myTextField", {
                                     hidden: index !== currentStep,
                               })}
                         />

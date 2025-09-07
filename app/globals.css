@@ -26,6 +26,16 @@
         @apply flex flex-col py-4 gap-2 w-full shadow-md mb-4 border border-gray-300 rounded-xl items-start h-fit dark:text-white dark:border-transparent dark:bg-[#1e1e1e];
 
     }
+
+    .myTextField fieldset {
+        @apply dark:border-white
+    }
+}
+
+@layer base {
+    h1, h2, h3, h4, h5, h6 {
+        @apply dark:text-white
+    }
 }
 
 @custom-variant dark (&:where(.dark, .dark *));

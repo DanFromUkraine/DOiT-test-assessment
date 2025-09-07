@@ -6,7 +6,7 @@ import {
       useSelectSnackbarVisibility,
 } from "@/src/features/snackbarVisibilitySlice";
 
-export default function SnackbarContainer({ message }: { message: string }) {
+export default function SnackbarContainer() {
       const { isOpened } = useSelectSnackbarVisibility();
       const close = useCloseSnackbar();
 

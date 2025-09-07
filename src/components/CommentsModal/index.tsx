@@ -1,16 +1,16 @@
 "use client";
 
 import { Dialog, Divider, List, Typography } from "@mui/material";
-import {
-      useGetCloseCommentsModalFn,
-      useSelectCommentModalInfo,
-} from "@/src/features/commentsModal/utils";
 import { useGetCommentsForPostQuery } from "@/src/services/postsApi";
 import Box from "@mui/material/Box";
+import {
+      useCloseComments,
+      useSelectCommentsVisibility,
+} from "@/src/features/commentsVisibilitySlice";
 
 export default function CommentsModal({ postId }: { postId: number }) {
-      const { isOpened } = useSelectCommentModalInfo();
-      const closeModal = useGetCloseCommentsModalFn();
+      const { isOpened } = useSelectCommentsVisibility();
+      const closeDialog = useCloseComments();
 
       const { data, isLoading, isError, error } =
             useGetCommentsForPostQuery(postId);
@@ -20,7 +20,7 @@ export default function CommentsModal({ postId }: { postId: number }) {
       return (
             <Dialog
                   open={isOpened}
-                  onClose={closeModal}
+                  onClose={closeDialog}
                   className="flex justify-center items-center"
             >
                   <Box className="bg-white dark:bg-containerDarkMode rounded-md">
