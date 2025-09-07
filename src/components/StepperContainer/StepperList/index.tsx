@@ -1,29 +1,16 @@
 "use client";
 
 import Stepper from "@mui/material/Stepper";
-import Step from "@mui/material/Step";
-import { StepButton, StepLabel } from "@mui/material";
-import { useStepsContext } from "@/src/contexts/createPostStepsContext";
+import { useSelectSteps } from "@/src/hooks/useSteps";
+import StepItem from "@/src/components/StepperContainer/StepperList/StepItem";
 
 export default function StepperList() {
-      const { currentStep, allSteps, setStep } = useStepsContext();
+      const { allSteps, currentStep } = useSelectSteps();
+
       return (
             <Stepper activeStep={currentStep} alternativeLabel className=" ">
                   {allSteps.map(({ label }, i) => (
-                        <Step key={label} disabled={false}>
-                              <StepButton onClick={() => setStep(i)}>
-                                    <StepLabel
-                                          slotProps={{
-                                                label: {
-                                                      className:
-                                                            "dark:text-white",
-                                                },
-                                          }}
-                                    >
-                                          {label}
-                                    </StepLabel>
-                              </StepButton>
-                        </Step>
+                        <StepItem label={label} index={i} />
                   ))}
             </Stepper>
       );

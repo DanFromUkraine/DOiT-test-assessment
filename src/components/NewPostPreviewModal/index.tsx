@@ -28,7 +28,7 @@ export default function NewPostPreviewModal() {
                   }}
             >
                   <Box className="flex flex-col">
-                        <Typography className="p-5">
+                        <Typography className="p-5 dark:text-white">
                               Попередній перегляд
                         </Typography>
                         <Divider />

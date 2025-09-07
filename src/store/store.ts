@@ -8,6 +8,7 @@ import commentsVisibilityReducer from "@/src/features/commentsVisibilitySlice";
 import snackbarVisibilityReducer from "@/src/features/snackbarVisibilitySlice";
 import createPostPreviewVisibilityReducer from "@/src/features/createPostPreviewVisibilitySlice";
 import postsReducer from "@/src/features/postsSlice";
+import stepperReducer from "@/src/features/stepperSlice";
 
 export const store = configureStore({
       reducer: {
@@ -17,6 +18,7 @@ export const store = configureStore({
             snackbarVisibility: snackbarVisibilityReducer,
             createPostPreviewVisibility: createPostPreviewVisibilityReducer,
             posts: postsReducer,
+            stepper: stepperReducer,
             [postsAPI.reducerPath]: postsAPI.reducer,
       },
       middleware: (getDefaultMiddleware) =>

@@ -1,9 +1,10 @@
 "use client";
 
 import { Button } from "@mui/material";
-import { useStepsContext } from "@/src/contexts/createPostStepsContext";
+import { useDecrementStep } from "@/src/hooks/useSteps";
 
 export default function MoveBackButton() {
-      const { decrementStep } = useStepsContext();
+      const decrementStep = useDecrementStep();
+
       return <Button onClick={decrementStep}>НАЗАД</Button>;
 }

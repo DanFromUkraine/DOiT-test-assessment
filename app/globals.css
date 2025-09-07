@@ -28,7 +28,7 @@
     }
 
     .myTextField fieldset {
-        @apply dark:border-white
+        @apply dark:border-white;
     }
 }
 
