@@ -2,11 +2,11 @@
 
 import { Button } from "@mui/material";
 import { useClosePreview } from "@/src/features/createPostPreviewVisibilitySlice";
-import { useStepsContext } from "@/src/contexts/createPostStepsContext";
+import { useSetStep } from "@/src/hooks/useSteps";
 
 export default function EditButton() {
       const closeDialog = useClosePreview();
-      const { setStep } = useStepsContext();
+      const setStep = useSetStep();
 
       const onEditButtonClick = () => {
             closeDialog();

@@ -1,31 +1,21 @@
 "use client";
 
-import Button from "@mui/material/Button";
-import SaveIcon from "@mui/icons-material/Save";
-import { useStepsContext } from "@/src/contexts/createPostStepsContext";
-import PreviewIcon from "@mui/icons-material/Preview";
 import { useOpenPreview } from "@/src/features/createPostPreviewVisibilitySlice";
+import { useIncrementStep, useSelectSteps } from "@/src/hooks/useSteps";
+import {
+      NextStepButtonUI,
+      PreviewButtonUI,
+} from "@/src/components/StepperContainer/StepNavigation/MoveNextButton/UI";
 
 export default function MoveNextButton() {
-      const { incrementStep, currentStep, allSteps } = useStepsContext();
+      const { allSteps, currentStep } = useSelectSteps();
+      const incrementStep = useIncrementStep();
       const isNowLastStep = currentStep === allSteps.length - 1;
       const openDialog = useOpenPreview();
 
-      return (
-            <>
-                  {isNowLastStep ? (
-                        <Button onClick={openDialog} endIcon={<PreviewIcon />}>
-                              Переглянути
-                        </Button>
-                  ) : (
-                        <Button
-                              onClick={incrementStep}
-                              variant="contained"
-                              endIcon={<SaveIcon />}
-                        >
-                              ЗБЕРЕГТИ
-                        </Button>
-                  )}
-            </>
+      return isNowLastStep ? (
+            <PreviewButtonUI openDialog={openDialog} />
+      ) : (
+            <NextStepButtonUI incrementStep={incrementStep} />
       );
 }

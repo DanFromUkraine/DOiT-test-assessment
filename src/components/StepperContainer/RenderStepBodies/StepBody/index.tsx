@@ -1,10 +1,8 @@
 "use client";
 
 import { Controller, useFormContext } from "react-hook-form";
-import { InputAdornment, TextField } from "@mui/material";
-import { useStepsContext } from "@/src/contexts/createPostStepsContext";
-import { clsx } from "clsx";
-import TitleIcon from "@mui/icons-material/Title";
+import { useSelectSteps } from "@/src/hooks/useSteps";
+import TextFieldUI from "@/src/components/StepperContainer/RenderStepBodies/StepBody/UI";
 
 export function StepInputBody({
       inputName,
@@ -16,36 +14,15 @@ export function StepInputBody({
       index: number;
 }) {
       const { control } = useFormContext();
-      const { currentStep } = useStepsContext();
+      const { currentStep } = useSelectSteps();
+      const isVisible = index === currentStep;
 
       return (
             <Controller
                   name={inputName}
                   control={control}
                   render={({ field }) => (
-                        <TextField
-                              onChange={field.onChange}
-                              defaultValue={field.value}
-                              required
-                              label={label}
-                              variant="outlined"
-                              slotProps={{
-                                    input: {
-                                          startAdornment: (
-                                                <InputAdornment position="start">
-                                                      <TitleIcon className="dark:text-white" />
-                                                </InputAdornment>
-                                          ),
-                                          className: "dark:text-white",
-                                    },
-                                    inputLabel: {
-                                          className: "dark:text-white",
-                                    },
-                              }}
-                              className={clsx("ring-white myTextField", {
-                                    hidden: index !== currentStep,
-                              })}
-                        />
+                        <TextFieldUI {...{ ...field, label, isVisible }} />
                   )}
             />
       );

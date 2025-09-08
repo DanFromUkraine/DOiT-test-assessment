@@ -1,36 +1,133 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# Do It — README
 
-First, run the development server:
+Коротко: це невеликий Next.js проєкт (React + Redux Toolkit). README містить інструкцію для локального запуску, опис архітектури, рекомендації щодо покращень і коротку інформацію по тестуванню.
+
+---
+
+## Швидкий старт (локально)
+
+1. Клонувати репозиторій в поточну директорію:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone <repo-url> .
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+> **Переконайтеся**, що ви у потрібній директорії перед виконанням команд нижче.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Встановлення та запуск (npm)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm install
+npm run dev
+```
 
-## Learn More
+### Встановлення та запуск (pnpm)
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+pnpm install
+pnpm dev
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+(Опціонально: `npm run build` → `npm start` для продакшн-збірки.)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## Моменти, які варто покращити 
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. **Серверні запити**
+   Щоб повніше використати можливості Next.js, робіть запити до API на сервері (server-side). Для відображення скелетонів використовуйте `loading.tsx` (внутрішньо працює з `Suspense`).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+2. **Структура компонентів і хуків**
+   Я дотримувався індустріальних підходів до архітектури, але особисто надаю перевагу зберігати кастомні хуки та маленькі компоненти поруч із місцем їхнього використання (co-located). Це дає швидке розуміння ієрархії за структурою папок. Якщо потрібно — можу поділитися прикладами на своєму GitHub.
+
+3. **Доступність (a11y) та SEO**
+
+    * Додати `aria-*` атрибути для інтерактивних/інформативних елементів.
+    * Додати мета-теги на сторінки для SEO.
+    * Забезпечити режим для людей з проблемами зору (контраст, масштабування, читабельність).
+    * Перевірити клавіатурну навігацію — зараз може бути проблемною. Це важливо для production (також з точки зору відповідності стандартам/законодавству).
+
+4. **Обробка помилок і валідація**
+
+    * Додати механізми глобального перехоплення помилок (error boundaries, сторінки помилок).
+    * Використати `zod` (або іншу схему) для валідації даних з сервера — покращує UX при помилках API.
+
+---
+
+## Покращення адаптивності (конкретні пропозиції)
+
+* **FilteredCards**: змінювати кількість колонок залежно від ширини екрану (responsive grid).
+* **PostCard (post-description)**: перемістити аватар/`userId` вище, звільнивши місце для заголовка; кнопки — в один ряд; діалог з коментарями — робити fullscreen на мобайлі з явною кнопкою закриття.
+* **Stepper (створення поста)**: збільшити ширину відносно екрану; для маленьких екранів заголовки кроків можливо розмістити в колонку.
+* **Hero**: адаптивні заголовки, кнопки в один ряд, зменшити відносну ширину, щоб забезпечити відступи від країв екрана.
+
+> Завдяки мінімалістичному дизайну правок небагато, але вони помітно покращать UX на мобайлах.
+
+---
+
+## Опис структури директорій
+
+```
+/app                # Next.js pages / routing (app directory)
+  └─ ...            # окремі сторінки імпортують ключові компоненти
+
+/src
+  ├─ components     # усі React JSX компоненти (кожен компонент — в окремій папці)
+  ├─ constants      # константи
+  ├─ features       # Redux slices (redux-toolkit)
+  ├─ hooks          # кастомні хуки, що використовуються компонентами
+  ├─ services
+  │   └─ postApi    # комунікація з JSONPlaceholder (api layer)
+  └─ utils          # утиліти (helper-функції), що не є хуками
+```
+
+### Організація компонентів
+
+Для збереження читабельності великих компонентів я ділив їх на підкомпоненти та розміщував підкомпоненти в папці головного компонента. Наприклад, в `AppHeader/` знаходяться `ChangeThemeButton`, `Logo`, `OpenCommentsButton`, `DrawerButton` — це полегшує розуміння залежностей.
+
+---
+
+## Цікаві місця в проєкті
+
+* `src/utils/createVisibilitySlice.ts` — утиліта для створення маленьких visibility-слайсів. Вона зекономила багато коду: замість \~40 рядків на слайс — \~10, при цьому зберігаючи принцип Single Responsibility (4 слайси мають однакову поведінку, але не можуть бути об’єднані в один з логічних причин).
+
+---
+
+## Тестування (рекомендації)
+
+* **Юніт-тести**: пріоритет — утиліти, reducers, селектори. Для компонентів з великою залежністю від store юніт-тести менш ефективні (потрібно багато моку).
+* **Integration / E2E**: для цього проєкту краще інвестувати в інтеграційні або end-to-end тести (наприклад, Playwright або Cypress) — вони дають впевненість, що сторінки і сценарії працюють як очікується.
+* Якщо робити unit для компонентів — мокати store або використовувати тестову обгортку з реальним тестовим store.
+
+---
+
+## Цифри (коротко)
+
+* За \~2.5 дні я написав приблизно **1500 рядків** коду у `app` та `src` (файли `.ts` / `.tsx`).
+* Приблизно **49 000+ символів** або **\~3790 слів** (за локальним підрахунком).
+
+> 1500 рядків — це значний об’єм для тестового завдання; з одного боку це демонструє вміння та деталізацію, з іншого — може виглядати як overengineering для невеликого MVP. Якщо потрібно, можу підготувати «легшу» версію з мінімальним набором функцій.
+
+---
+
+## Як я рекомендую вносити зміни / пропонувати PR
+
+* Відкрий issue з коротким описом проблеми/покращення.
+* Робіть малі, атомарні PR: один PR — одна зміна / одна фіча / один багфікс.
+* Додавайте короткий опис в PR та (за потреби) скрипт для локальної перевірки.
+
+---
+
+## Контакти / додатково
+
+Якщо хочеш — можу підготувати:
+
+* Стисле резюме змін для відправки рев’юеру на GitHub (коротка супровідна записка).
+* Приклад конфігурації для `cloc` або скриптів підрахунку рядків/символів (щоб зробити звіт).
+* Готові PR-шаблони або приклад тестів (Vitest + RTL / Playwright).
+
+---
+
+Якщо потрібно — відредагую README під конкретні вимоги: англійською, додам секцію “How to contribute”, CI/CD інструкцію або приклади команд для production.
+

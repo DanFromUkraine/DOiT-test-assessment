@@ -1,26 +1,29 @@
-import { useState } from "react";
-import { STEPS } from "@/src/constants/create-post-page-steps";
+"use client";
 
-export function useSteps() {
-      const [currentStep, setStepLocalOnly] = useState(0);
-      const incrementStep = () => {
-            if (currentStep === STEPS.length) return;
-            setStepLocalOnly((prev) => prev + 1);
-      };
-      const decrementStep = () => {
-            if (currentStep === 0) return;
-            setStepLocalOnly((prev) => prev - 1);
-      };
-      const setStep = (newVal: number) => {
-            if (newVal > STEPS.length || newVal < 0) return;
-            setStepLocalOnly(newVal);
-      };
+import { useDispatch, useSelector } from "react-redux";
+import { Stepper } from "@/src/features/types";
+import { RootState } from "@/src/store/store";
+import {
+      decrementStep,
+      incrementStep,
+      setStep,
+} from "@/src/features/stepperSlice";
 
-      return {
-            currentStep,
-            setStep,
-            incrementStep,
-            decrementStep,
-            allSteps: STEPS,
-      };
+export function useSelectSteps() {
+      return useSelector<RootState, Stepper>((state) => state.stepper);
+}
+
+export function useIncrementStep() {
+      const dispatch = useDispatch();
+      return () => dispatch(incrementStep());
+}
+
+export function useDecrementStep() {
+      const dispatch = useDispatch();
+      return () => dispatch(decrementStep());
+}
+
+export function useSetStep() {
+      const dispatch = useDispatch();
+      return (step: number) => dispatch(setStep(step));
 }
