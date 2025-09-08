@@ -17,7 +17,7 @@ export default function FilteredPosts({
       const filteredPosts =
             posts?.filter((post) => post.title.includes(deferredSearchQuery)) ||
             [];
-      const dullArray = new Array(30).fill(0);
+      const dullArray = new Array(100).fill(0);
 
       const list =
             posts.length === 0
@@ -26,7 +26,7 @@ export default function FilteredPosts({
                                 key={i}
                                 animation="wave"
                                 variant="rectangular"
-                                className="mb-4 rounded-md"
+                                className="mb-4 rounded-md test-postSkeleton"
                                 height={250}
                           />
                     ))
