@@ -4,7 +4,7 @@ import { Avatar } from "@mui/material";
 import { PostCardVariants } from "@/src/components/Post";
 import IconButton from "@mui/material/IconButton";
 import DeleteIcon from "@mui/icons-material/Delete";
-import { useDeletePostFunction } from "@/src/hooks/useDeletePostFunction";
+import { useDeletePost } from "@/src/hooks/usePostHooks";
 
 export default function PostHeader({
       title,
@@ -17,7 +17,7 @@ export default function PostHeader({
       variant: PostCardVariants;
       postId: number;
 }) {
-      const handleClick = useDeletePostFunction(postId);
+      const handleClick = useDeletePost(postId);
 
       return (
             <Box className="flex items-center w-full">

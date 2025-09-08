@@ -5,28 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1c9410c4-6ed4-437c-b79b-b58d85d9220c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/AppHeader/OpenDrawerButton/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/NewPostPreviewModal/ApproveButton/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/NewPostPreviewModal/EditButton/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/NewPostPreviewModal/PreviewContent/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hooks/useFormDataForPreview.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/features/postsSlice.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/usePostHooks.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/posts/create/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/posts/create/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AppHeader/ChangeThemeButton/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AppHeader/ChangeThemeButton/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AppHeader/OpenCommentsButton/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AppHeader/OpenCommentsButton/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AppHeader/OpenSidebarButton/UI.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AppHeader/OpenDrawerButton/UI.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AppHeader/OpenSidebarButton/index.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AppHeader/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AppHeader/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CommentsModal/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CommentsModal/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/DrawerNav/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DrawerNav/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NewPostPreviewModal/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NewPostPreviewModal/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/StepperContainer/RenderStepBodies/StepBody/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/StepperContainer/RenderStepBodies/StepBody/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/posts/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/posts/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/FilteredPosts/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FilteredPosts/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Post/PostHeader/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Post/PostHeader/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/StepperContainer/Snackbar/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/StepperContainer/Snackbar/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/StepperContainer/StepNavigation/MoveNextButton/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/StepperContainer/StepNavigation/MoveNextButton/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/StepperContainer/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/StepperContainer/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/drawerVisibilitySlice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/drawerVisibilitySlice.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/hooks/useFormSubmit.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useFormSubmit.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/store.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +73,7 @@
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Problems" order="1" />
       <window_info anchor="bottom" id="Problems View" order="2" weight="0.36710793" />
-      <window_info anchor="bottom" id="Terminal" order="3" weight="0.28054988" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="3" visible="true" weight="0.29175153" />
       <window_info anchor="bottom" id="Services" order="4" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.33044806" />
       <window_info anchor="right" id="Endpoints" />
