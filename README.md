@@ -47,6 +47,16 @@ npm run start
 pnpm start
 ```
 
+### Запуск тестів 
+```bash
+pnpm test
+```
+
+### Запуск платформи для відлагодження тестів
+```bash
+pnpm test-with-ui
+```
+
 (Опціонально: `npm run build` → `npm start` для продакшн-збірки.)
 
 ---

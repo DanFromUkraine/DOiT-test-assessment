@@ -5,14 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1c9410c4-6ed4-437c-b79b-b58d85d9220c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/tests/postsPage.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/utils.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/FilteredPosts/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FilteredPosts/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Post/PostHeader/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Post/PostHeader/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SearchBar/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchBar/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/playwright.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/playwright.config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +57,7 @@
       <window_info id="Backup and Sync History" />
       <window_info id="Commit_Guest" show_stripe_button="false" />
       <window_info id="Pull Requests" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.19763206" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19763206" />
       <window_info id="Commit" order="1" weight="0.25" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" />
@@ -72,7 +67,7 @@
       <window_info anchor="bottom" id="Version Control" order="0" weight="0.26221997" />
       <window_info anchor="bottom" id="Problems" order="1" />
       <window_info anchor="bottom" id="Problems View" order="2" weight="0.36710793" />
-      <window_info anchor="bottom" id="Terminal" order="3" weight="0.45570266" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="3" visible="true" weight="0.4943992" />
       <window_info anchor="bottom" id="Services" order="4" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.33044806" />
       <window_info anchor="right" id="Endpoints" />
