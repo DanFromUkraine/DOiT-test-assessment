@@ -11,7 +11,6 @@ export default function AllPostsPage() {
       const [query, setQuery] = useState(() => "");
       useInitiateAllPosts();
       const { posts } = useSelectPosts();
-      console.log({ posts });
 
       return (
             <Box className="flex justify-center py-5" component="main">

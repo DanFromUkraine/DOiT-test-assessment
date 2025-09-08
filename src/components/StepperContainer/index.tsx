@@ -23,7 +23,7 @@ export default function StepperContainer() {
       return (
             <FormProvider {...methods}>
                   <Box component="form" className="w-[40%]">
-                        <Box className="flex flex-col gap-4 p-6 rounded-lg shadow-md bg-white dark:bg-containerDarkMode ">
+                        <Box className="flex flex-col w-full gap-4 p-6 rounded-lg shadow-md bg-white dark:bg-containerDarkMode ">
                               <StepperList />
                               <RenderStepBodies />
                               <StepNavigation />

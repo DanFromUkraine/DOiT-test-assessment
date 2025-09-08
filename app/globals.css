@@ -2,40 +2,44 @@
 @import "tailwindcss";
 
 @theme {
-    --color-containerDarkMode: #1e1e1e;
+      --color-containerDarkMode: #1e1e1e;
 }
 
 @layer utilities {
-    .gradientLight {
-        @apply bg-gradient-to-r from-blue-100 via-blue-50 to-pink-100;
-    }
+      .gradientLight {
+            @apply bg-gradient-to-r from-blue-100 via-blue-50 to-pink-100;
+      }
 
-    .gradientDark {
-        @apply bg-gradient-to-r from-[#1e1e1e] via-[#1a1b2e] to-[#4b0082];
-    }
+      .gradientDark {
+            @apply bg-gradient-to-r from-[#1e1e1e] via-[#1a1b2e] to-[#4b0082];
+      }
 }
 
 @layer components {
-    .postCardsContainer {
-        column-count: 3;
-        column-gap: 16px;
-    }
+      .postCardsContainer {
+            column-count: 3;
+            column-gap: 16px;
+      }
 
-    .postCard {
-        break-inside: avoid;
-        @apply flex flex-col py-4 gap-2 w-full shadow-md mb-4 border border-gray-300 rounded-xl items-start h-fit dark:text-white dark:border-transparent dark:bg-[#1e1e1e];
+      .postCard {
+            break-inside: avoid;
+            @apply flex flex-col py-4 gap-2 w-full shadow-md mb-4 border border-gray-300 rounded-xl items-start h-fit dark:text-white dark:border-transparent dark:bg-[#1e1e1e];
+      }
 
-    }
-
-    .myTextField fieldset {
-        @apply dark:border-white;
-    }
+      .myTextField fieldset {
+            @apply dark:border-white;
+      }
 }
 
 @layer base {
-    h1, h2, h3, h4, h5, h6 {
-        @apply dark:text-white
-    }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+            @apply dark:text-white;
+      }
 }
 
 @custom-variant dark (&:where(.dark, .dark *));

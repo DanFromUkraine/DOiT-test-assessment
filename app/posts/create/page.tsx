@@ -1,5 +1,3 @@
-"use client";
-
 import StepperContainer from "@/src/components/StepperContainer";
 import { Box } from "@mui/material";
 import SnackbarContainer from "@/src/components/StepperContainer/Snackbar";

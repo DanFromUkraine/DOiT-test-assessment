@@ -13,7 +13,7 @@ export default function SnackbarUI({
       return (
             <Snackbar
                   open={isOpened}
-                  onClose={close}
+                  onClose={closeSnackbar}
                   message="Пост успішно створено!"
                   autoHideDuration={6_000}
                   action={
