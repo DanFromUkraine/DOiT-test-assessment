@@ -35,9 +35,4 @@ export function useToggleTheme() {
       return () => dispatch(toggleTheme());
 }
 
-export function useSetDarkTheme() {
-      const dispatch = useDispatch();
-      return () => dispatch(setDark());
-}
-
 export default themeSlice.reducer;
