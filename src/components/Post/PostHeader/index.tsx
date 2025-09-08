@@ -31,7 +31,7 @@ export default function PostHeader({
                   </Box>
                   {variant === "post-preview" && (
                         <IconButton
-                              className="ml-auto mb-auto"
+                              className="ml-auto mb-auto test-postDeleteButton"
                               onClick={handleClick}
                         >
                               <DeleteIcon className="text-red-500" />

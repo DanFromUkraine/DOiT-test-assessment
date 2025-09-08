@@ -14,7 +14,7 @@ export default function SearchBar({
             >
                   <SearchIcon className=" text-gray-500 dark:text-white" />
                   <InputBase
-                        className="ml-1 flex-grow  dark:text-white"
+                        className="ml-1 flex-grow  dark:text-white test-searchBarInput"
                         placeholder="Пошук за заголовком..."
                         onChange={(e) => setQuery(e.target.value)}
                         inputProps={{
