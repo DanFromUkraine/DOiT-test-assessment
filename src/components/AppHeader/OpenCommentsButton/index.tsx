@@ -11,7 +11,9 @@ import { useOpenComments } from "@/src/features/commentsVisibilitySlice";
 export default function OpenCommentsButton() {
       const id = useGetPostId();
       const openDialog = useOpenComments();
-      const { data } = useGetCommentsForPostQuery(id);
+      const { data } = useGetCommentsForPostQuery(id, {
+            skip: typeof id === "undefined",
+      });
 
       return (
             <IconButton onClick={openDialog} className={clsx({ hidden: !id })}>
